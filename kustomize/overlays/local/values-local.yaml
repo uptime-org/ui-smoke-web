@@ -28,7 +28,7 @@ service:
 
 # API endpoint for UI
 api:
-  baseUrl: "http://api.{{ECO_NAME}}.local"
+  baseUrl: "http://api.gx-smoke.local"
 
 # UI feature flags (local environment)
 dashboard:

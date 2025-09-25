@@ -1,20 +1,20 @@
 apiVersion: v2
-name: {{SERVICE_NAME}}
-description: {{DESCRIPTION}}
+name: ui-smoke-web
+description: Smoke test web interface
 type: application
 version: 0.1.0
 appVersion: "1.0.0"
 keywords:
-  - {{TIER}}
-  - {{TIER}}
+  - ui
+  - ui
   - microservice
   - galaxy
-home: https://github.com/{{GITHUB_ORG}}
+home: https://github.com/uptime-org
 sources:
-  - https://github.com/{{GITHUB_ORG}}
+  - https://github.com/uptime-org
 maintainers:
-  - name: {{TEAM}}
+  - name: team2
     email: shawn.p.meredith@gmail.com
 annotations:
-  category: {{TIER}}
-  tier: {{TIER}}
+  category: ui
+  tier: ui
