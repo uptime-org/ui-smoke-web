@@ -51,7 +51,7 @@ spec:
           app.kubernetes.io/name: {{ .name }}
     ports:
     - protocol: TCP
-      port: {{ .port | default 54Values.service.targetPort }}
+      port: {{ .port | default .Values.service.targetPort }}
   {{- end }}
   {{- end }}
   
