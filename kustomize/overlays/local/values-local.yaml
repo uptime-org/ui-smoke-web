@@ -1,0 +1,49 @@
+# Local environment overrides for values.yaml
+
+# Environment-specific settings
+environment: local
+debug: true
+
+# Local resource limits (smaller for dev)
+resources:
+  requests:
+    cpu: 50m
+    memory: 128Mi
+  limits:
+    cpu: 200m
+    memory: 256Mi
+
+# Local replica count
+replicaCount: 1
+
+# Local image settings
+image:
+  tag: latest
+  pullPolicy: Never  # Use local images
+
+# Local service configuration
+service:
+  type: NodePort
+  nodePort: 30{{TIER_PORT_OFFSET}}01
+
+# API endpoint for UI
+api:
+  baseUrl: "http://api.{{ECO_NAME}}.local"
+
+# UI feature flags (local environment)
+dashboard:
+  theme_enabled: true
+  analytics_enabled: false    # No analytics locally
+  realtime_enabled: true
+
+# Admin panel features (if admin service)
+admin:
+  user_management_enabled: true
+  monitoring_enabled: false   # Skip monitoring locally
+  billing_oversight_enabled: false  # No billing oversight locally
+
+# Auth UI features (if auth UI service)
+auth_ui:
+  custom_themes_enabled: true
+  social_login_enabled: false  # Only local login for dev
+  password_reset_enabled: false
