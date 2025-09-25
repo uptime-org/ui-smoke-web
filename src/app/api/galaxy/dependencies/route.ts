@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 
 // Galaxy service metadata - Template placeholders replaced by CLI
-const SERVICE_NAME = "{{SERVICE_NAME}}"
+const SERVICE_NAME = "ui-smoke-web"
 
 // Load dependencies from environment variables
 function loadDependencies() {

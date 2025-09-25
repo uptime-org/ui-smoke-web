@@ -5,9 +5,9 @@ const galaxyConfig = {
   
   // Galaxy service configuration
   env: {
-    GALAXY_SERVICE_NAME: '{{SERVICE_NAME}}',
-    GALAXY_SERVICE_TIER: '{{TIER}}',
-    GALAXY_SERVICE_TEAM: '{{TEAM}}',
+    GALAXY_SERVICE_NAME: 'ui-smoke-web',
+    GALAXY_SERVICE_TIER: 'ui',
+    GALAXY_SERVICE_TEAM: 'team2',
     // Next.js API proxy environment variables
     API_URL: process.env.API_URL || '',
     INTERNAL_API_URL: process.env.INTERNAL_API_URL || '',
@@ -41,11 +41,11 @@ const galaxyConfig = {
         headers: [
           {
             key: 'X-Galaxy-Service',
-            value: '{{SERVICE_NAME}}',
+            value: 'ui-smoke-web',
           },
           {
             key: 'X-Galaxy-Tier',
-            value: '{{TIER}}',
+            value: 'ui',
           },
         ],
       },

@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: '{{SERVICE_NAME}}',
-  description: '{{DESCRIPTION}}',
+  title: 'ui-smoke-web',
+  description: 'Smoke test web interface',
 }
 
 export default function RootLayout({
